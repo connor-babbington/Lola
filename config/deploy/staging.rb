@@ -4,6 +4,6 @@ set :stage, :staging
 set :rails_env, :staging
 
 server "178.128.166.176",
-       user: "deploy",
+       user: "root",
        roles: %w[app backup cron db redis sidekiq web]
 set :deploy_to, "/var/www/lola/staging/"

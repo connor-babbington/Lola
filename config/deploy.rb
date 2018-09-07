@@ -4,6 +4,9 @@ set :default_env, { rvm_bin_path: '~/.rvm/bin' }
 set :user, "deploy"
 
 set :default_shell, '/bin/bash -l'
+set :pty, true
+
+set :format, :pretty
 
 
 set :stages, ["staging", "production"]
