@@ -1,4 +1,4 @@
-set :branch, ENV.fetch("CAPISTRANO_BRANCH", "development")
+set :branch, ENV.fetch("CAPISTRANO_BRANCH", "staging")
 set :mb_sidekiq_concurrency, 1
 set :stage, :staging
 set :rails_env, :staging
