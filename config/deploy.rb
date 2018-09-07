@@ -1,7 +1,10 @@
 set :application, "Lola"
 set :repo_url, "git@github.com:connor-babbington/Lola.git"
-
+set :default_env, { rvm_bin_path: '~/.rvm/bin' }
 set :user, "deploy"
+
+set :default_shell, '/bin/bash -l'
+
 
 set :stages, ["staging", "production"]
 set :default_stage, "staging"
